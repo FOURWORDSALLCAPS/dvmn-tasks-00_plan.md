@@ -2,7 +2,7 @@ import requests
 
 
 url = ['https://wttr.in/Череповец', 'https://wttr.in/Лондон', 'https://wttr.in/Шереметьево']
-payload = {'nTqM': ''}
+payload = {'nTqM': '','lang': 'ru'}
 i = 0
 
 for response in url:
