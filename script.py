@@ -12,4 +12,4 @@ for response in url:
 
 	i += 1
 
-	print(response.url)
+	print(response.text)
