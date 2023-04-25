@@ -1,7 +1,8 @@
 import requests
 
+
 url = ['https://wttr.in/Череповец', 'https://wttr.in/Лондон', 'https://wttr.in/Шереметьево']
-payload = {'key': 'nTqM&lang=ru'}
+payload = {'nTqM': ''}
 i = 0
 
 for response in url:
@@ -10,7 +11,5 @@ for response in url:
 	response.status_code
 
 	i += 1
-	
-	print(response.text)
 
-
+	print(response.url)
