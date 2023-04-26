@@ -11,7 +11,6 @@ payload = {
 	'lang': 'ru',
 }
 
-
 for response in city:
 	response = requests.get('https://wttr.in/', params=payload)
 	print(response.text)
