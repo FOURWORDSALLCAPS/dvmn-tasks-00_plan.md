@@ -1,31 +1,28 @@
 # Получение погоды из терминала
 
 ### Как установить:
+Клонируете репозиторий.
 
-Клонируете этот репозиторий себе на машину или скачиваете zip версию.
+Запускаем CMD (можно через Win+R, дальше вводим cmd) и вписываем команду cd /D <путь к папке со скриптом>
 
-Python3 должен быть уже установлен. 
-
+После этого даем команду
 ```
-Затем запускаете Python sript.py (Python обязательно должен быть в PATH)
+python -m pip install -r requirements.txt
 ```
+Ждем пока установятся все зависимости.
+
+В этом же CMD запускаем скрипт командой ```python script.py```
+
+### Результат:
+
+https://dvmn.org/filer/canonical/1568003481/268/
+
+### Версия Python: 
+Я использовал Python `3.8.3`, но он должен работать на любой более новой версии.
 
 ### Цель проекта:
-
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
 
-# Getting the weather from the terminal
+### Автор
+(2023) Zaitsev Vladimir
 
-### How to install:
-
-Clone this repository to your machine or download the zip version.
-
-Python3 should already be installed.
-
-```
-Then run Python sript.py (Python must be added to PATH)
-```
-
-### Objective of the project:
-
-Code for writing research on an online course for web developers [dvmn.org](https://dvmn.org/).
