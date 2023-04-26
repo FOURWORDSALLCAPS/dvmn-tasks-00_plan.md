@@ -13,4 +13,5 @@ payload = {
 
 for response in city:
 	response = requests.get('https://wttr.in/', params=payload)
+	response.raise_for_status()
 	print(response.text)
