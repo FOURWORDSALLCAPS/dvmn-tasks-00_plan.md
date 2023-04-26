@@ -13,7 +13,11 @@ python -m pip install -r requirements.txt
 
 В этом же CMD запускаем скрипт командой ```python script.py```
 
-### Версия Python 
+### Результат:
+
+https://dvmn.org/filer/canonical/1568003481/268/
+
+### Версия Python: 
 Я использовал Python `3.8.3`, но он должен работать на любой более новой версии.
 
 ### Цель проекта:
