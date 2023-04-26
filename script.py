@@ -1,15 +1,17 @@
 import requests
 
+city = [
+	'Череповец', 
+	'Лондон', 
+	'Шереметьево'
+]
 
-url = ['https://wttr.in/Череповец', 'https://wttr.in/Лондон', 'https://wttr.in/Шереметьево']
-payload = {'nTqM': '','lang': 'ru'}
-i = 0
+payload = {
+	'nTqM': '',
+	'lang': 'ru',
+}
 
-for response in url:
-	url_patterns = url[i]
-	response = requests.get(url_patterns, params=payload)
-	response.status_code
 
-	i += 1
-
+for response in city:
+	response = requests.get('https://wttr.in/', params=payload)
 	print(response.text)
