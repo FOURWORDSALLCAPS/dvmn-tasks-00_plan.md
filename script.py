@@ -1,7 +1,7 @@
 import requests
 
-city = [
-	'Череповец', 
+citys = [
+	'Череповец', 	
 	'Лондон', 
 	'Шереметьево'
 ]
@@ -10,8 +10,8 @@ payload = {
 	'nTqM': '',
 	'lang': 'ru',
 }
-
-
-for response in city:
-	response = requests.get('https://wttr.in/', params=payload)
+	
+for city in citys:
+	response = requests.get(f'https://wttr.in/{city}', params=payload)
+	response.raise_for_status()
 	print(response.text)
